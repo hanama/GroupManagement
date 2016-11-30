@@ -1,4 +1,4 @@
-﻿namespace Project1
+﻿namespace GroupManagement
 {
     partial class Statistics
     {
@@ -78,7 +78,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Project1.Properties.Resources.intel;
+            this.pictureBox1.Image = global::GroupManagement.Properties.Resources.intel;
             this.pictureBox1.Location = new System.Drawing.Point(724, -5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(280, 200);

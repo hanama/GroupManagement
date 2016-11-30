@@ -1,4 +1,4 @@
-﻿namespace Project1
+﻿namespace GroupManagement
 {
     partial class MainPage
     {
@@ -259,4 +259,3 @@
         private System.Windows.Forms.Label label2;
     }
 }
-

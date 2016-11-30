@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Project1
+namespace GroupManagement
 {
     public partial class Profile : Form
     {

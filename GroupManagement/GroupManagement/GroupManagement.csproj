@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,29 +50,53 @@
     <Compile Include="ActionRequired.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ActionRequired.Designer.cs" />
+    <Compile Include="ActionRequired.Designer.cs">
+      <DependentUpon>ActionRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChronologicalGraph.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChronologicalGraph.Designer.cs" />
+    <Compile Include="ChronologicalGraph.Designer.cs">
+      <DependentUpon>ChronologicalGraph.cs</DependentUpon>
+    </Compile>
     <Compile Include="GroupEvents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GroupEvents.Designer.cs" />
+    <Compile Include="GroupEvents.Designer.cs">
+      <DependentUpon>GroupEvents.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainPage.Designer.cs" />
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profile.Designer.cs" />
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Statistics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistics.Designer.cs" />
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChronologicalGraph.resx">
+      <DependentUpon>ChronologicalGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupEvents.resx">
+      <DependentUpon>GroupEvents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -80,7 +105,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +125,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="main.js" />
+    <Content Include="Resources\intel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
